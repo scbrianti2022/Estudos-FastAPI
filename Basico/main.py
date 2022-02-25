@@ -19,6 +19,4 @@ def read_item(item_id: int, p: bool, q: Optional[str] = None):
     return {"item_id": item_id, "q": q, "p": p}
 
 if __name__ == '__main__':
-    import uvicorn
-
-    uvicorn.run("main:app", host='0.0.0.0',port=5000, reload=True)
+    uvicorn.run("main:app", port=5000, reload=True)
